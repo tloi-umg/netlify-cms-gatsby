@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/netlify-cms-gatsby",
   siteMetadata: {
     title: `Gatsby Starter Blog`,
     author: {
@@ -12,6 +13,7 @@ module.exports = {
     },
   },
   plugins: [
+    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
